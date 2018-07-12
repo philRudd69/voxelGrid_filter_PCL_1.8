@@ -1,6 +1,12 @@
 # voxelGrid_filter_PCL_1.8
 
-use like this:
+Installation:
+
+1. cmake CMakeLists.txt
+2. make
+3. DONE
+
+Use like this:
 
 1. to apply voxel grid filter to a point cloud, specify its load path and saving path:
    you should use the point clouds provided in this repository. the downsampling distance is coded in the .cpp file, i.e you would have to manually change that value. it is called 'd_points_abs'.
