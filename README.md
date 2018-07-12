@@ -2,7 +2,8 @@
 
 use like this:
 
-1. to apply voxel grid filter to a point cloud (its path is to be specified in the c++ source-file):
+1. to apply voxel grid filter to a point cloud, specify its load path and saving path:
+   you should use the point clouds provided in this repository. the downsampling distance is coded in the .cpp file, i.e you would have to manually change that value. it is called 'd_points_abs'.
 
 	./downsampling_compare -downsample /path/to/point/cloud/ /saving/path/for/downsampled/cloud/
 
@@ -10,7 +11,7 @@ use like this:
 
 then you have one downsampled version of the point cloud filtered with voxelGrid filter of PCL 1.7 and another one filtered with voxelGrid filter of PCL 1.8
 
-3. now you can compare the two downsampled point clouds with
+3. now you can compare the two downsampled point clouds with (use same paths as in step 1)
 
 	./downsampling_compare -compare /path/to/point/cloud/ /saving/path/for/downsampled/cloud/
 
